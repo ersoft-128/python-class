@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Bikroy Drugs</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            padding:20px;
+        }
+    </style>
+  </head>
+  <body>
+    {% comment "my nav bar code" %}{% endcomment %}
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'home' %}">Bikroy Drugs</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-dark nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 all Drugs
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Cokein</a></li>
+                  <li><a class="dropdown-item" href="#">Gaza</a></li>
+                  <li><a class="dropdown-item" href="#">Mod</a></li>
+                  <li><a class="dropdown-item" href="#">polithin</a></li>
+                  <li><hr class="dropdown-divider">secret drug</li>
+                  <li><a class="dropdown-item" href="#">Dandi</a></li>
+                </ul>
+              </li>
+            
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+    <h1 class='py-5 text-center'>Expalin about this project</h1>
+    <hr>
+    
+
+    {% comment %} <p style=' text-align:center; margin:auto;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Vivamus bibendum libero mi, ut congue urna vehicula vel. 
+            Suspendisse bibendum turpis a lacus cursus dapibus. 
+            Nulla sit amet quam et velit lobortis pretium vitae vitae sapien. Fusce nec tempor nisl.
+             Integer faucibus cursus urna, vitae aliquam augue bibendum in. Aliquam feugiat tellus id egestas viverra.
+              Duis condimentum nulla ac ipsum eleifend consequat. 
+              Suspendisse nunc augue, molestie aliquam feugiat quis, mollis eget ligula.
+               Donec rhoncus tellus ut tortor dapibus, nec ultricies nisi pharetra. 
+               Morbi aliquam vehicula magna, non dictum nisi ultricies eu.
+    
+    In a nunc venenatis, luctus tellus imperdiet, 
+    porttitor neque. Vestibulum vehicula sem at fringilla ultrices. Praesent scelerisque risus pharetra sem laoreet, 
+    sit amet rutrum purus finibus. Cras finibus ipsum quis dui pellentesque, at molestie libero molestie. 
+    In accumsan turpis lorem, non mattis felis aliquet in. Integer nibh sapien, egestas id neque vitae, 
+    vestibulum facilisis est. Aenean sit amet erat dictum, consequat leo at, elementum sem. Suspendisse 
+    auctor ligula ac sem luctus pulvinar. Suspendisse potenti. Nunc commodo, lorem id sodales rutrum,
+     mi neque dignissim diam, non molestie eros mauris sed enim. Suspendisse ut augue in dolor finibus f
+     ermentum at eget erat.
+     Donec vel ante at metus malesuada imperdiet id id leo. Cras nec vulputate leo, sed aliquet diam.</p> {% endcomment %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
